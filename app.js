@@ -10,9 +10,9 @@ import { PORT } from './config/env.js' ; // ✅ Import the PORT variable from th
 
 const app = express();
 
-app.use('.api/v1/auth', authRouter);
-app.use('.api/v1/user', userRouter);
-app.use('.api/v1/subscriptions', subscriptionRouter);
+app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/user', userRouter);
+app.use('/api/v1/subscriptions', subscriptionRouter);
 
 app.use(morgan('dev'));
 app.use(express.json());
